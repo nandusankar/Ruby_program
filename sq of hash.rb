@@ -1,5 +1,5 @@
-class SQOFHASH
-  def self.sq_of_hash(x)
+class Square
+  def self.generate(x)
     count = 0
     count1 = 0
     x.times do
@@ -7,11 +7,11 @@ class SQOFHASH
       x.times do
           count1 += 1
         if (count == 1)||(count ==x)
-          print "#\t"
+          print "# "
         elsif (count1 == 1)||(count1 == x)
-          print "#\t"
+          print "# "
         else
-          print " \t"
+          print "  "
         end
       end
       puts"\n"
@@ -20,5 +20,5 @@ class SQOFHASH
   end
 end
 print"Enter the one side length of sq :"
-length = gets.to_i
-SQOFHASH.sq_of_hash(length)
+side = gets.to_i
+Square.generate(side)
