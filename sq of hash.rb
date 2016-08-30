@@ -7,11 +7,11 @@ class Square
       x.times do
           count1 += 1
         if (count == 1)||(count ==x)
-          print "#"
+          print "# "
         elsif (count1 == 1)||(count1 == x)
-          print "#"
+          print "# "
         else
-          print " "
+          print "  "
         end
       end
       puts"\n"
